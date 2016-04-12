@@ -1,6 +1,6 @@
-package homeworks.utils;
+package Common.utils;
 
-import homeworks.selenium.WebDriverWraper;
+import Common.selenium.WebDriverWraper;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;

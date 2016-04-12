@@ -3,7 +3,7 @@ package hotlineTest.functionalTest;
 import functionalTest.FunctionalTest;
 import hotlineTest.HotlinePages.GoodsPage;
 import hotlineTest.HotlinePages.MainPageHotline;
-import homeworks.utils.Log4Test;
+import Common.utils.Log4Test;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

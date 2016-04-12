@@ -5,7 +5,7 @@ import hotlineTest.HotlinePages.MainPageHotline;
 import hotlineTest.HotlinePages.RegisterPage;
 import hotlineTest.HotlinePages.User;
 import hotlineTest.HotlinePages.WelcomePage;
-import homeworks.utils.Log4Test;
+import Common.utils.Log4Test;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;

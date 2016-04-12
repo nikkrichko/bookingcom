@@ -1,4 +1,4 @@
-package homeworks.utils;
+package Common.utils;
 
 import org.apache.log4j.Logger;
 import org.testng.Reporter;

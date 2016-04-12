@@ -1,10 +1,10 @@
 package functionalTest;
 
-import homeworks.selenium.WebDriverFactory;
-import homeworks.selenium.WebDriverWraper;
-import homeworks.utils.Log4Test;
-import homeworks.utils.PropertyLoader;
-import homeworks.utils.ScreenShotMaker;
+import Common.selenium.WebDriverFactory;
+import Common.selenium.WebDriverWraper;
+import Common.utils.Log4Test;
+import Common.utils.PropertyLoader;
+import Common.utils.ScreenShotMaker;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;

@@ -1,4 +1,4 @@
-package ResultPage;
+package BookingComPages.ResultPage;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

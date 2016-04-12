@@ -1,6 +1,6 @@
 package hotlineTest.HotlinePages;
 
-import homeworks.utils.Log4Test;
+import Common.utils.Log4Test;
 
 public class User {
     private StringGenerator generator;

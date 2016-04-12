@@ -1,6 +1,6 @@
-package MainPage;
+package BookingComPages.MainPage;
 
-import homeworks.utils.Log4Test;
+import Common.utils.Log4Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

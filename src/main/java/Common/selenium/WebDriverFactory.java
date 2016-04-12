@@ -1,7 +1,7 @@
-package homeworks.selenium;
+package Common.selenium;
 
 
-import homeworks.utils.PropertyLoader;
+import Common.utils.PropertyLoader;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
