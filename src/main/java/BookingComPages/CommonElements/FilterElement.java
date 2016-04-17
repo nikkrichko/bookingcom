@@ -29,8 +29,11 @@ public class FilterElement {
     @FindBy(id = "")
     private List<WebElement> monthUntilList;
 
-    @FindBy( className = "b-button__text")
+    @FindBy(xpath = "//*[contains(text(), 'Узнать цены')]")
     private WebElement submitSearchButton;
+
+    @FindBy(id = "searchbox_btn")
+    private WebElement searchButton;
 
     public FilterElement(WebDriver webDriver) {
         PageFactory.initElements(webDriver, this);
@@ -45,7 +48,9 @@ public class FilterElement {
         firstAutoComplete.click();
     }
 
-    public void submitSearch(){
+    public void submitFirstSearch(){
         submitSearchButton.click();
     }
+
+    public void setSubmitSearchButton(){searchButton.click();}
 }
