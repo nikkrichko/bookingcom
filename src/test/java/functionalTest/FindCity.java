@@ -24,16 +24,8 @@ public class FindCity extends FunctionalTestSetup {
             Log4Test.info("positive findcity " + cityName);
             mainPage.getMainPage();
             filterElement.setCityField(cityName);
-//            webDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             filterElement.setFirstAutoComplete();
             filterElement.submitFirstSearch();
             resultPage.isResultContainsCity(cityName);
-
-//        List<WebElement> cities = webDriver.findElements(By.xpath("//div[@class='address']//a[contains(., 'Киев')]"));
-//        System.out.println("cities size " +cities.size());
-
-
-
-
     }
 }

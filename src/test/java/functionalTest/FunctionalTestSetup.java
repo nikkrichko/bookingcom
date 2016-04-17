@@ -3,6 +3,7 @@ package functionalTest;
 import Common.selenium.WebDriverFactory;
 import Common.selenium.WebDriverWraper;
 import Common.utils.Log4Test;
+import Common.utils.PropertyLoader;
 import Common.utils.ScreenShotMaker;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
@@ -24,8 +25,8 @@ public class FunctionalTestSetup {
 
         Log4Test.info("browser start");
         Log4Test.info("*************");
-//        webDriver = WebDriverFactory.initDriver(PropertyLoader.loadProperty("browser.name"));
-        webDriver = WebDriverFactory.initDriver("chrome");
+        webDriver = WebDriverFactory.initDriver(PropertyLoader.loadProperty("browser.name"));
+//        webDriver = WebDriverFactory.initDriver("chrome");
         screenShotMaker = new ScreenShotMaker(webDriver);
         webDriver.manage().window().maximize();
     }

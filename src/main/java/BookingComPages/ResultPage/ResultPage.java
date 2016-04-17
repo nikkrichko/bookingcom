@@ -11,6 +11,7 @@ public class ResultPage {
 
     private WebDriver webDriver;
     private List<WebElement> cities ;
+    private int DEFAULT_SIZE = 15;
 
     public List<WebElement> getCities(String cityName) {
         cities = webDriver.findElements(By.xpath("//div[@class='address']//a[contains(., '"+ cityName + "')]"));
@@ -23,7 +24,7 @@ public class ResultPage {
     }
 
     public boolean isResultContainsCity(String cityName){
-        if (getCities(cityName).size() == 15) return true;
+        if (getCities(cityName).size() == DEFAULT_SIZE) return true;
         return false;
     }
 

@@ -108,9 +108,9 @@
         </profile>
 
         <profile>
-            <id>Chrome</id>
+            <id>chrome</id>
             <properties>
-                <browser.name>Chrome</browser.name>
+                <browser.name>chrome</browser.name>
             </properties>
         </profile>
     </profiles>
