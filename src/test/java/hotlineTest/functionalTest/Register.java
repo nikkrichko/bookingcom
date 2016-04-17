@@ -1,6 +1,6 @@
 package hotlineTest.functionalTest;
 
-import functionalTest.FunctionalTest;
+import functionalTest.FunctionalTestSetup;
 import hotlineTest.HotlinePages.MainPageHotline;
 import hotlineTest.HotlinePages.RegisterPage;
 import hotlineTest.HotlinePages.User;
@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class Register extends FunctionalTest {
+public class Register extends FunctionalTestSetup {
 
     MainPageHotline mainPageHotline;
     RegisterPage registerPage;

@@ -1,6 +1,6 @@
 package hotlineTest.functionalTest;
 
-import functionalTest.FunctionalTest;
+import functionalTest.FunctionalTestSetup;
 import hotlineTest.HotlinePages.GoodsPage;
 import hotlineTest.HotlinePages.MainPageHotline;
 import hotlineTest.HotlinePages.ProductPage;
@@ -9,7 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ProductPrice extends FunctionalTest {
+public class ProductPrice extends FunctionalTestSetup {
 
     String product = "iPhone";
     MainPageHotline mainPageHotline;

@@ -13,7 +13,7 @@ import org.testng.annotations.BeforeSuite;
 /**
  * Created by bionic on 11/5/14.
  */
-public class FunctionalTest {
+public class FunctionalTestSetup {
 
 
     public static WebDriverWraper webDriver;

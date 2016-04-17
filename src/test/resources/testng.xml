@@ -4,4 +4,5 @@
     <suite-files>
         <suite-file path="functional.xml"></suite-file>
     </suite-files>
+
 </suite>

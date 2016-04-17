@@ -1,6 +1,6 @@
 package hotlineTest.functionalTest;
 
-import functionalTest.FunctionalTest;
+import functionalTest.FunctionalTestSetup;
 import hotlineTest.HotlinePages.GoodsPage;
 import hotlineTest.HotlinePages.MainPageHotline;
 import org.openqa.selenium.WebDriver;
@@ -12,14 +12,14 @@ import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 
 
-public class CompareRefrigerator extends FunctionalTest {
+public class CompareRefrigerator extends FunctionalTestSetup {
     WebDriver webDriver;
     MainPageHotline mainPageHotline;
     GoodsPage goodsPage;
 
     @BeforeClass
     public void initDriver() {
-        webDriver = FunctionalTest.webDriver.getOriginalDriver();
+        webDriver = FunctionalTestSetup.webDriver.getOriginalDriver();
     }
 
     @BeforeMethod

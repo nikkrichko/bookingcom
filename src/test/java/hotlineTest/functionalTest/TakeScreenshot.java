@@ -1,11 +1,11 @@
 package hotlineTest.functionalTest;
 
-import functionalTest.FunctionalTest;
+import functionalTest.FunctionalTestSetup;
 import hotlineTest.HotlinePages.MainPageHotline;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class TakeScreenshot extends FunctionalTest {
+public class TakeScreenshot extends FunctionalTestSetup {
     MainPageHotline mainPageHotline;
 
     @BeforeMethod

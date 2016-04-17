@@ -1,6 +1,6 @@
 package hotlineTest.functionalTest;
 
-import functionalTest.FunctionalTest;
+import functionalTest.FunctionalTestSetup;
 import hotlineTest.HotlinePages.GoodsPage;
 import hotlineTest.HotlinePages.MainPageHotline;
 import Common.utils.Log4Test;
@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 /**
  * Created by bionic on 11/5/14.
  */
-public class FindProduct extends FunctionalTest {
+public class FindProduct extends FunctionalTestSetup {
 
 
     MainPageHotline mainPageHotline;

@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class FindCity extends FunctionalTest {
+public class FindCity extends FunctionalTestSetup {
 
     private static ChromeDriverService service;
     MainPage mainPage;
