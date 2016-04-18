@@ -23,7 +23,7 @@ public class FindCity extends FunctionalTestSetup {
 
     @Test(groups = { "functional", "Positive" })
     public void findCity() throws InterruptedException {
-            Log4Test.info("positive findcity " + cityName);
+            Log4Test.info("positive findcity  " + cityName);
             mainPage.getMainPage();
             filterElement.inputCityNameInSerchField(cityName);
             filterElement.pressFirstAutoCompleteField();
