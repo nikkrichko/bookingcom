@@ -5,6 +5,7 @@ import BookingComPages.MainPage.MainPage;
 import BookingComPages.ResultPage.ResultPage;
 import Common.utils.Log4Test;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class FindCity extends FunctionalTestSetup {
@@ -14,18 +15,21 @@ public class FindCity extends FunctionalTestSetup {
     FilterElement filterElement;
     ResultPage resultPage;
     String cityName = "Киев";
-//    WebDriverWraper webDriver = new WebDriverFactory().initDriver("chrome");
+
+    @BeforeClass
+    public void  setupPages(){
+        mainPage = new MainPage(webDriver);
+        filterElement = new FilterElement(webDriver);
+        resultPage = new ResultPage(webDriver);
+    }
 
     @Test
         public void findCity() throws InterruptedException {
-            mainPage = new MainPage(webDriver);
-            filterElement = new FilterElement(webDriver);
-            resultPage = new ResultPage(webDriver);
             Log4Test.info("positive findcity " + cityName);
             mainPage.getMainPage();
             filterElement.setCityField(cityName);
             filterElement.setFirstAutoComplete();
             filterElement.submitFirstSearch();
-            resultPage.isResultContainsCity(cityName);
+            assert (resultPage.isResultContainsCity(cityName));
     }
 }
