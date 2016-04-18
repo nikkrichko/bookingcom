@@ -4,13 +4,11 @@ import BookingComPages.CommonElements.FilterElement;
 import BookingComPages.MainPage.MainPage;
 import BookingComPages.ResultPage.ResultPage;
 import Common.utils.Log4Test;
-import org.openqa.selenium.chrome.ChromeDriverService;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 public class FindCity extends FunctionalTestSetup {
 
-    private static ChromeDriverService service;
     MainPage mainPage;
     FilterElement filterElement;
     ResultPage resultPage;

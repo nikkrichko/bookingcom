@@ -1,5 +1,6 @@
 package Common.selenium;
 
+import Common.utils.PropertyLoader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,7 +13,7 @@ import java.util.Set;
 public class WebDriverWraper implements WebDriver {
 
     private static WebDriver webDriver;
-    private final int TIME_OUT = 60;
+    private final int TIME_OUT = Integer.valueOf(PropertyLoader.loadProperty("selenium.max.timeout"));
 
 
     public WebDriverWraper(WebDriver webDriver) {
