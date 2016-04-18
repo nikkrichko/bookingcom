@@ -14,7 +14,7 @@ public class FindCity extends FunctionalTestSetup {
     MainPage mainPage;
     FilterElement filterElement;
     ResultPage resultPage;
-    String cityName = "Киев";
+    String cityName = "Нью-Йорк";
 
     @BeforeClass
     public void  setupPages(){
@@ -23,12 +23,12 @@ public class FindCity extends FunctionalTestSetup {
         resultPage = new ResultPage(webDriver);
     }
 
-    @Test
-        public void findCity() throws InterruptedException {
+    @Test(groups = { "functional", "Positive" })
+    public void findCity() throws InterruptedException {
             Log4Test.info("positive findcity " + cityName);
             mainPage.getMainPage();
-            filterElement.setCityField(cityName);
-            filterElement.setFirstAutoComplete();
+            filterElement.inputCityNameInSerchField(cityName);
+            filterElement.pressFirstAutoCompleteField();
             filterElement.submitFirstSearch();
             assert (resultPage.isResultContainsCity(cityName));
     }

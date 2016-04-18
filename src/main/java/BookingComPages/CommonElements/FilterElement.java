@@ -40,11 +40,11 @@ public class FilterElement {
         this.webDriver = webDriver;
     }
 
-    public void setCityField(String cityName){
+    public void inputCityNameInSerchField(String cityName){
         cityField.sendKeys(cityName);
     }
 
-    public void setFirstAutoComplete(){
+    public void pressFirstAutoCompleteField(){
         firstAutoComplete.click();
     }
 
